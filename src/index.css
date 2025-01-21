@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --fc-button-text-color: #fff;
+  --fc-button-bg-color: #2c3e50;
+  --fc-button-border-color: #2c3e50;
+  --fc-button-hover-bg-color: #1e2b37;
+  --fc-button-hover-border-color: #1a252f;
+  --fc-button-active-bg-color: #1a252f;
+  --fc-button-active-border-color: #151e27;
+  --fc-today-bg-color: #fff;
+}
+
+body {
+  background: white;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Removing arrow in number input fields */
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: small;
+  font-weight: 600;
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: small;
+  padding: 1rem;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 14px;
+}
+
+.fc .fc-today-button {
+  font-size: 14px;
+  background-color: #4f46e5 !important;
+  border-radius: 10px;
+  border: none;
+}
+
+.fc-day-today .fc-daygrid-day-number {
+  color: #4f46e5;
+  font-weight: 800;
+}
+
+.fc .fc-prev-button {
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+.fc .fc-next-button {
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
